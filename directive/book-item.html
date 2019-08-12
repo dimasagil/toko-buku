@@ -1,0 +1,14 @@
+<div class="card">
+    <img src="https://via.placeholder.com/200" class="card-img-top">
+    <div class="card-body">
+        <a href="#/detail/{{ book.id }}">
+            <h5 class="card-title">{{ book.judul }}</h5>
+            <p class="card-text">
+                {{ book.harga | rupiah:'Rp ' }}
+                <small class="float-right"> {{ book.author }}</small>
+            </p>
+        </a>
+
+        <a href="#/cart" class="btn btn-success btn-block mt-3">Buy</a>
+    </div>
+</div>

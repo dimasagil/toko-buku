@@ -1,0 +1,13 @@
+<div class="row" ng-controller="BookDetailController as book">
+    <div class="col-md-6">
+        <img src="https://via.placeholder.com/400x500"/>
+    </div>
+    <div class="col-md-6">
+        <div class="mb-4">
+            <h3>{{book.book.title}}</h3>
+            <b>{{ book.book.price | rupiah: 'Rp ' }}</b>
+        </div>
+
+        <button type="button" class="btn btn-success" ng-click="book.buy(book.book.id)">Buy</button>
+    </div>
+</div>
